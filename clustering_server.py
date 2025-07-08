@@ -155,7 +155,7 @@ def cluster_sentences():
         texts = [s['text'] for s in sentences_input]
 
         # 최대 클러스터 개수 설정 (기본값: 10)
-        max_clusters = data.get('max_clusters', 5)
+        max_clusters = data.get('max_clusters', 20)
 
         logger.info(
             f"Processing {len(texts)} sentences with max_clusters={max_clusters}")
